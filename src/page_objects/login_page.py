@@ -1,10 +1,10 @@
 import logging
 
+
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.wait import WebDriverWait
 
 from src.page_objects.base_page import BasePage
-
 
 class LoginPage(BasePage):
     def __init__(self, driver: WebDriver, wait_driver: WebDriverWait):

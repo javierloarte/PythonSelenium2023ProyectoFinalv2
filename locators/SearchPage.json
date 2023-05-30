@@ -1,0 +1,25 @@
+{
+  "url": "https://laboratorio.qaminds.com/",
+  "locators": {
+    "search_input": {
+      "by": "NAME",
+      "value": "search"
+    },
+    "search_btn": {
+      "by": "XPATH",
+      "value": "//div[@id=\"search\"]//button"
+    },
+    "liked_product": {
+      "by": "XPATH",
+      "value": "//button[@type='button']//i[@class='fa fa-heart']"
+    },
+    "liked_success": {
+      "by": "XPATH",
+      "value": "//div[@class='alert alert-success alert-dismissible']"
+    },
+    "total_like": {
+      "by": "XPATH",
+      "value": "//a[@id='wishlist-total']//i[@class='fa fa-heart']"
+    }
+  }
+}
