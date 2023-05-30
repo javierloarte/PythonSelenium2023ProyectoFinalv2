@@ -8,4 +8,3 @@ def web_drivers():
     driver, wait_driver = get_drivers()
     yield driver, wait_driver
     driver.quit()
-
