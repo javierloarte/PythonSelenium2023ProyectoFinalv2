@@ -1,0 +1,49 @@
+{
+  "url": "https://laboratorio.qaminds.com/index.php?route=account/register",
+  "locators": {
+    "name_input": {
+      "by": "XPATH",
+      "value": "//input[@id='input-firstname']"
+    },
+    "last_input": {
+      "by": "XPATH",
+      "value": "//input[@id='input-lastname']"
+    },
+    "mail_input": {
+      "by": "XPATH",
+      "value": "//input[@id='input-email']"
+    },
+    "phone_input": {
+      "by": "XPATH",
+      "value": "//input[@id='input-telephone']"
+    },
+    "password_input": {
+      "by": "XPATH",
+      "value": "//input[@id='input-password']"
+    },
+    "confirm_input": {
+      "by": "XPATH",
+      "value": "//input[@id='input-confirm']"
+    },
+    "news_select": {
+      "by": "XPATH",
+      "value": "//label[normalize-space()='Yes']//input[@name='newsletter']"
+    },
+    "policy_option": {
+      "by": "XPATH",
+      "value": "//input[@name='agree']"
+    },
+    "register_btn": {
+      "by": "XPATH",
+      "value": "//input[@value='Continue']"
+    },
+    "agree_btn": {
+      "by": "XPATH",
+      "value": "//a[@class='btn btn-primary']"
+    },
+    "success_msg": {
+      "by": "XPATH",
+      "value": "//div[@id='content']"
+    }
+  }
+}
