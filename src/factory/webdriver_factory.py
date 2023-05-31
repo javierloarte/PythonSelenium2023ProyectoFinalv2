@@ -12,7 +12,7 @@ from src.factory.firefox_factory import create_driver as create_firefox_driver
 
 # Mapping of driver type and create methods. For new driver supports, only add a new entry.
 __BROWSER_FACTORIES = {
-    DriverType.CHROME: create_chrome_driver,
+   # DriverType.CHROME: create_chrome_driver,
     DriverType.FIREFOX: create_firefox_driver
 }
 
