@@ -2,6 +2,7 @@ import logging
 
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.wait import WebDriverWait
+from typing import Tuple
 
 from src.config.config_handler import ConfigHandler
 from src.config.config_model import DriverType, ConfigData
@@ -12,12 +13,12 @@ from src.factory.firefox_factory import create_driver as create_firefox_driver
 
 # Mapping of driver type and create methods. For new driver supports, only add a new entry.
 __BROWSER_FACTORIES = {
-   # DriverType.CHROME: create_chrome_driver,
+    DriverType.CHROME: create_chrome_driver,
     DriverType.FIREFOX: create_firefox_driver
 }
 
 
-def get_drivers(overwrite_config_path: str = None) -> tuple[WebDriver, WebDriverWait]:
+def get_drivers(overwrite_config_path: str = None) -> Tuple[WebDriver, WebDriverWait]:
     """Get web driver and wait driver instances.
 
     Default configuration is applied to the new instance of web driver, user have the option to
@@ -35,7 +36,7 @@ def get_drivers(overwrite_config_path: str = None) -> tuple[WebDriver, WebDriver
     return __get_driver(config)
 
 
-def __get_driver(config: ConfigData) -> tuple[WebDriver, WebDriverWait]:
+def __get_driver(config: ConfigData) -> Tuple[WebDriver, WebDriverWait]:
     # Create driver
     logging.info(f"Create web driver instance, implicit wait: {config.implicit_wait}")
     driver = __BROWSER_FACTORIES[config.driver_type](config)
