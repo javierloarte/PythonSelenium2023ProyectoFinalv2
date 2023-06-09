@@ -16,9 +16,8 @@ class WishlistPage(BasePage):
         self.element("pass_input").wait_clickable().send_keys(password)
         self.element("login_btn").wait_clickable().click()
 
-    def wishlist_remove(self, value: str):
+    def wishlist_remove(self, ):
         self.element("wish_btn").wait_clickable().click()
-        self.element("item_canon").wait_visible()
         self.element("remove_btn").wait_clickable().click()
         self.element("continue_btn").wait_clickable().click()
 
