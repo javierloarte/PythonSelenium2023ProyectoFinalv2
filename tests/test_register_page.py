@@ -1,5 +1,6 @@
 from src.page_objects.register_page import RegisterPage
 
+## Validar correcto registro de usuario
 
 def test_register(web_drivers):
     register_page = RegisterPage(*web_drivers)
