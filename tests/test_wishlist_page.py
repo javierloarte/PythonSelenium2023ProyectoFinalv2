@@ -6,3 +6,4 @@ def test_wishlist(web_drivers):
     wishlist_page.open()
     wishlist_page.wishlist_logim("tempv1@gmail.com","654321")
     wishlist_page.wishlist_remove()
+
