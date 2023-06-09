@@ -5,7 +5,6 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.wait import WebDriverWait
 
 from selenium.webdriver.support import expected_conditions as EC
-from typing import List
 
 
 class WebElementWrapper:
@@ -21,7 +20,7 @@ class WebElementWrapper:
         logging.info(f"Find element using: {self.__locator}")
         return self.__driver.find_element(*self.__locator)
 
-    def find_elements(self) -> List[WebElement]:
+    def find_elements(self) -> list[WebElement]:
         logging.info(f"Find elements using: {self.__locator}")
         return self.__driver.find_elements(*self.__locator)
 
